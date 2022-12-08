@@ -1,6 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
-@import url(./fontello.css);
+@import url(./fonts.css);
 
 /* 숨김 컨텐츠 */
 .a11y-hidden {
@@ -231,7 +231,6 @@ body {
   animation-name: moveEffect;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
-  font-size: 24px;
   display: inline-block;
 }
 
