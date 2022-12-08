@@ -225,14 +225,13 @@ body {
 }
 
 .visual-text {
-  position: relative;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  /* background-color: coral; */
   animation-name: moveEffect;
   animation-duration: 2000ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  display: inline-block;
+  /* display: inline-block; */
+  position: absolute;
 }
 
 /* 메인 */
