@@ -3,7 +3,7 @@
 @import url(./fonts.css);
 
 /* 숨김 컨텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   background: red;
   position: absolute;
   width: 1px;
@@ -303,6 +303,56 @@ body {
   background: coral radial-gradient(circle at right top, orange, orangered);
   border-radius: 5px;
   padding: 10px;
+}
+
+.login-title {
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  position: relative;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 10px;
+}
+
+.user-email {
+  background-color: skyblue;
+}
+
+.user-pw {
+  background-color: lime;
+}
+
+.login-form label {
+  display: inline-block;
+  background-color: salmon;
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  bottom: 1px solid #aaa;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* 슬로건 */
