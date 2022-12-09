@@ -325,12 +325,6 @@ body {
   padding-bottom: 5px;
 }
 
-.sign {
-  background-color: #fff;
-  border-radius: 0 0 5px 5px;
-  padding: 0 10px 10px 10px;
-}
-
 .user-email, .user-pw {
   margin-bottom: 5px;
 }
@@ -362,7 +356,28 @@ body {
   padding: 0 8px;
   border-radius: 5px;
   font-size: 13px;
+}
 
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.sign a {
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+
+.sign a::before {
+  content: "\e804";
+  font-family: 'fontello';
+  margin-right: 8px;
+  color: orange;
 }
 
 /* 슬로건 */
