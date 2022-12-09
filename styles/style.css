@@ -329,9 +329,6 @@ body {
   margin-bottom: 5px;
 }
 
-.user-pw {
-}
-
 .login-form label {
   display: inline-block;
   width: 4em;
@@ -378,6 +375,29 @@ body {
   font-family: 'fontello';
   margin-right: 8px;
   color: orange;
+}
+
+/* 유효성 검사 배너 */
+.validation-list {
+  /* background-color: yellow; */
+  margin-top: 25px;
+}
+
+.validation-list li {
+  margin-top: 10px;
+}
+
+.validation-list a {
+  display: block;
+  background: url(./images/validation_icon.png) no-repeat 25px 50%,
+   #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 8px 15px 8px 50px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+}
+
+.validation-list a:hover, .validation-list a:focus {
+  color: red;
 }
 
 /* 슬로건 */
