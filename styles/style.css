@@ -411,12 +411,10 @@ body {
   width: 380px;
 }
 .search-form-inner {
-  background-color: yellow;
   display: flex;
   flex-flow: row nowrap;
 }
 .form-group {
-  background-color: pink;
   flex-grow: 1;
   display: flex;
   flex-flow: row nowrap;
@@ -424,7 +422,6 @@ body {
   padding-right: 10px;
 }
 .form-group-label {
-  background-color: lime;
   white-space: nowrap;
   margin-right: 10px;
 }
