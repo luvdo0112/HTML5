@@ -399,6 +399,53 @@ body {
   color: red;
 }
 
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.term-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list {
+  background-color: yellow;
+  margin-top: 10px;
+}
+
+.term-list div {
+  background-color: pink;
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-list-subject {
+  background-color: lime;
+  float: right;
+  width: 145px;
+}
+
+.term-list-thumbnail {
+  background-color: purple;
+  float: left;
+}
+
+.term-list-thumbnail img {
+  vertical-align: middle;
+}
+
+.term-list-brief {
+  background-color: coral;
+  /* w 설정을 안 하면 공간이 부족해서 아래로 내려가버림 */
+  float: right;
+  width: 145px;
+}
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
