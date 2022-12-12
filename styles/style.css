@@ -422,8 +422,9 @@ body {
   padding-right: 10px;
 }
 .form-group-label {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   margin-right: 10px;
+  flex-shrink: 0;
 }
 .form-group-input {
   border: 1px solid #aaa;
@@ -435,7 +436,8 @@ body {
   /* min-width: 0; */
 }
 .search-button {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  flex-shrink: 0;
   background-color: #000;
   color: #fff;
   height: 24px;
