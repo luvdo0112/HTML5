@@ -414,24 +414,26 @@ body {
 }
 
 .term-list {
-  background-color: yellow;
   margin-top: 10px;
 }
 
 .term-list div {
-  background-color: pink;
   margin-top: 10px;
   display: flow-root;
 }
 
-.term-list-subject {
-  background-color: lime;
+.term-list-subject, .term-list-brief {
+  /* w 설정을 안 하면 공간이 부족해서 아래로 내려가버림 */
   float: right;
   width: 145px;
 }
 
+.term-list-subject {
+  color: #296897;
+  font-weight: 500;
+}
+
 .term-list-thumbnail {
-  background-color: purple;
   float: left;
 }
 
@@ -439,11 +441,12 @@ body {
   vertical-align: middle;
 }
 
-.term-list-brief {
-  background-color: coral;
-  /* w 설정을 안 하면 공간이 부족해서 아래로 내려가버림 */
-  float: right;
+.cross .term-list-subject, .cross .term-list-brief {
+  float: left;
   width: 145px;
+}
+.cross .term-list-thumbnail {
+  float: right;
 }
 
 /* 슬로건 */
