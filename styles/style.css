@@ -580,7 +580,6 @@ body {
   display: inline-block;
 }
 .event-button-wrapper {
-  background-color: yellow;
   /* firefox는 overflow hidden 해결이 안됨 따라서 h 지정해줘야 함 */
   overflow: hidden;
   height: 20px;
