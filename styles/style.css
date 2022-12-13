@@ -520,7 +520,6 @@ body {
   background: #aaa linear-gradient(to right, #ccc, #fff);
 }
 .news-title {
-  color: #e85e2c;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -561,6 +560,55 @@ body {
   top: -8px;
   right: -8px;
   padding: 8px;
+}
+
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-effect {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+.accent-color {
+  color: #e85e2c;
+}
+.event {
+  border-bottom: 1px solid #aaa;
+
+}
+.event-button-wrapper {
+  background-color: yellow;
+  /* firefox는 overflow hidden 해결이 안됨 따라서 h 지정해줘야 함 */
+  overflow: hidden;
+  height: 21px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  /* ie는 gap 지원 X */
+  gap: 5px;
+}
+.event-button {
+  /* IR 기법 -> image Replacement */
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 18px 0 0 0;
+  background: url(./images/back_forward.png);
+}
+.event-button-next {
+  background: url(./images/back_forward.png) -36px 0;
+}
+.event-thumbnail, .event-brief {
+  margin: 10px;
+}
+.event-brief {
+  line-height: 1.5;
+}
+.related {
+  margin: 10px;
+}
+.related-list {
+  background-color: #fff;
+  margin-top: 10px;
 }
 
 /* 슬로건 */
