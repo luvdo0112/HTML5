@@ -567,24 +567,32 @@ body {
   background: #ccc linear-gradient(to bottom, #ccc, #eee);
   border: 1px solid #aaa;
   border-radius: 5px;
+  padding: 10px;
 }
 .accent-color {
   color: #e85e2c;
 }
 .event {
   border-bottom: 1px solid #aaa;
-
+  /* position: relative; */
+}
+.event-title {
+  display: inline-block;
 }
 .event-button-wrapper {
   background-color: yellow;
   /* firefox는 overflow hidden 해결이 안됨 따라서 h 지정해줘야 함 */
   overflow: hidden;
-  height: 21px;
+  height: 20px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   /* ie는 gap 지원 X */
   gap: 5px;
+  float: right;
+}
+#eventDetail {
+  clear: both;
 }
 .event-button {
   /* IR 기법 -> image Replacement */
@@ -592,23 +600,54 @@ body {
   height: 18px;
   border: 0;
   padding: 18px 0 0 0;
-  background: url(./images/back_forward.png);
+  background: url(./images/back_forward.png) no-repeat;
+  
 }
 .event-button-next {
-  background: url(./images/back_forward.png) -36px 0;
+  background-position: -36px 0;
+}
+.event-button:focus {
+  outline-offset: -2px;
 }
 .event-thumbnail, .event-brief {
-  margin: 10px;
+  margin: 10px 0;
+}
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
 }
 .event-brief {
   line-height: 1.5;
 }
 .related {
-  margin: 10px;
+  margin-top: 10px;
 }
 .related-list {
   background-color: #fff;
+  border: 1px solid #aaa;
   margin-top: 10px;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 400ms 0ms, padding 400ms 400ms;
+  /* transition-property: height, padding;
+  transition-duration: 400ms, 400ms;
+  transition-delay: 0ms, 400ms; */
+}
+.related-list li {
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 5px;
+}
+.related-list a {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+.related-list:hover, .related-list:focus {
+  height: 147px;
+  padding: 10px 0;
 }
 
 /* 슬로건 */
