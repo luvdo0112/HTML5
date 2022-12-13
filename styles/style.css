@@ -505,6 +505,63 @@ body {
   color: hsla(110, 50%, 30%, 1);
 }
 
+/* 새소식 */
+.news {
+  margin-top: 20px;
+  position: relative;
+}
+.news::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background: #aaa linear-gradient(to right, #ccc, #fff);
+}
+.news-title {
+  color: #e85e2c;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.news-link {
+  /* a이 article을 포함하려면 a에 block 지정해주기*/
+  display: block;
+}
+.news-item {
+  margin-top: 35px;
+  padding-left: 130px;
+  position: relative;
+}
+.news-item-title {
+  font-weight: 500;
+}
+.news-item-date {
+  display: block;
+  margin : 5px 0 10px;
+
+}
+.news-item-brief {
+  line-height: 1.5;
+}
+.news-item-thumbnail {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  text-align: center;
+}
+.news-item-thumbnail img {
+  box-shadow: 0 15px 10px 5px #ccc;
+  /* margin(바깥쪽)을 주기 가능 img는 inlineblock 이기 때문! */
+  margin-bottom: 15px;
+}
+.news-more {
+  /* 노멀 플로우 상 면적을 차지하지 않고 공중에 떠있음, position 지정하면 "블록상자" */
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
 
 /* 슬로건 */
 .slogan {
