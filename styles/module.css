@@ -1,0 +1,21 @@
+.gradient-effect {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+.accent-color {
+  color: #e85e2c;
+}
+.margin-top-default {
+  margin-top: 20px;
+}
+.margin-top-thin {
+  margin-top: 5px;
+}
+.margin-top-normal {
+  margin-top: 10px;
+}
+.margin-top-large {
+  margin-top: 15px;
+}
