@@ -4,6 +4,10 @@
   border-radius: 5px;
   padding: 10px;
 }
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .accent-color {
   color: #e85e2c;
 }
